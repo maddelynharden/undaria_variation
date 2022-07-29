@@ -10,6 +10,7 @@
 *.bam
 *.bai
 *.sbi
+*.dict
 *.vcf
 *.tbi
 *.idx
