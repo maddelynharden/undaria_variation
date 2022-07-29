@@ -1,0 +1,20 @@
+==========================================
+SLURM_JOB_ID = 709788
+SLURM_JOB_NODELIST = b01-05
+TMPDIR = /tmp/SLURM_709788
+==========================================
+101549531 reads; of these:
+  101549531 (100.00%) were paired; of these:
+    29153219 (28.71%) aligned concordantly 0 times
+    46402919 (45.69%) aligned concordantly exactly 1 time
+    25993393 (25.60%) aligned concordantly >1 times
+    ----
+    29153219 pairs aligned concordantly 0 times; of these:
+      492252 (1.69%) aligned discordantly 1 time
+    ----
+    28660967 pairs aligned 0 times concordantly or discordantly; of these:
+      57321934 mates make up the pairs; of these:
+        53108064 (92.65%) aligned 0 times
+        1919958 (3.35%) aligned exactly 1 time
+        2293912 (4.00%) aligned >1 times
+73.85% overall alignment rate
