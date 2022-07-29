@@ -12,3 +12,4 @@
 *.vcf
 *.tbi
 *.idx
+*.json
