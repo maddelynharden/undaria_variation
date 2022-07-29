@@ -2,6 +2,7 @@
 *.gz
 *.fasta
 *.fa
+*.fai
 *.fastq
 *.fq
 *.bt2
