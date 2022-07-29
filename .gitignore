@@ -13,3 +13,5 @@
 *.tbi
 *.idx
 *.json
+*.tbd
+*interval_list_data
