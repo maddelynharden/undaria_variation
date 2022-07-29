@@ -1,0 +1,17 @@
+TrimmomaticPE: Started with arguments:
+ -threads 12 -phred33 wgs/SRR12223739_SRP271933_Undaria_pinnatifida_individual_1_2016-04-19_INTRO_Fr_Roscoff_1_France_1.fastq.gz wgs/SRR12223739_SRP271933_Undaria_pinnatifida_individual_1_2016-04-19_INTRO_Fr_Roscoff_1_France_2.fastq.gz wgs/SRR12223739_SRP271933_Undaria_pinnatifida_individual_1_2016-04-19_INTRO_Fr_Roscoff_1_France_1_P.fastq.gz wgs/SRR12223739_SRP271933_Undaria_pinnatifida_individual_1_2016-04-19_INTRO_Fr_Roscoff_1_France_1_U.fastq.gz wgs/SRR12223739_SRP271933_Undaria_pinnatifida_individual_1_2016-04-19_INTRO_Fr_Roscoff_1_France_2_P.fastq.gz wgs/SRR12223739_SRP271933_Undaria_pinnatifida_individual_1_2016-04-19_INTRO_Fr_Roscoff_1_France_2_U.fastq.gz ILLUMINACLIP:/project/noujdine_61/common_resources/Trimmomatic_adapters_v0.39/TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 SLIDINGWINDOW:5:20 MINLEN:50
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Exception in thread "Thread-1" java.lang.RuntimeException: Sequence and quality length don't match: 'TAGTAGTTGCATTCGGAACCCAGTTTGGGCGCTGCCCCGACGCCGGCTGGGTGGTGTCATCTGCTTTGTTGGTGTTCTTGCTTGCTAAATTATTGAGCTTC' vs '@BBCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGDGG0FGGFGFDGGGC'
+	at org.usadellab.trimmomatic.fastq.FastqRecord.<init>(FastqRecord.java:25)
+	at org.usadellab.trimmomatic.fastq.FastqParser.parseOne(FastqParser.java:89)
+	at org.usadellab.trimmomatic.fastq.FastqParser.next(FastqParser.java:179)
+	at org.usadellab.trimmomatic.threading.ParserWorker.run(ParserWorker.java:42)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Exception in thread "Thread-0" java.lang.RuntimeException: Missing quality line from record: SRR12223739.75750152 HWI-D00574:198:C9F9CANXX:4:2208:11611:10308 length=101
+	at org.usadellab.trimmomatic.fastq.FastqParser.parseOne(FastqParser.java:87)
+	at org.usadellab.trimmomatic.fastq.FastqParser.next(FastqParser.java:179)
+	at org.usadellab.trimmomatic.threading.ParserWorker.run(ParserWorker.java:42)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Input Read Pairs: 33846000 Both Surviving: 27734697 (81.94%) Forward Only Surviving: 3996461 (11.81%) Reverse Only Surviving: 885576 (2.62%) Dropped: 1229266 (3.63%)
+TrimmomaticPE: Completed successfully

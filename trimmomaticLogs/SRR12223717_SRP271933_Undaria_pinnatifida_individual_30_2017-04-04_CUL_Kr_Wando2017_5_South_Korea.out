@@ -1,0 +1,6 @@
+TrimmomaticPE: Started with arguments:
+ -threads 12 -phred33 wgs/SRR12223717_SRP271933_Undaria_pinnatifida_individual_30_2017-04-04_CUL_Kr_Wando2017_5_South_Korea_1.fastq.gz wgs/SRR12223717_SRP271933_Undaria_pinnatifida_individual_30_2017-04-04_CUL_Kr_Wando2017_5_South_Korea_2.fastq.gz wgs/SRR12223717_SRP271933_Undaria_pinnatifida_individual_30_2017-04-04_CUL_Kr_Wando2017_5_South_Korea_1_P.fastq.gz wgs/SRR12223717_SRP271933_Undaria_pinnatifida_individual_30_2017-04-04_CUL_Kr_Wando2017_5_South_Korea_1_U.fastq.gz wgs/SRR12223717_SRP271933_Undaria_pinnatifida_individual_30_2017-04-04_CUL_Kr_Wando2017_5_South_Korea_2_P.fastq.gz wgs/SRR12223717_SRP271933_Undaria_pinnatifida_individual_30_2017-04-04_CUL_Kr_Wando2017_5_South_Korea_2_U.fastq.gz ILLUMINACLIP:/project/noujdine_61/common_resources/Trimmomatic_adapters_v0.39/TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 SLIDINGWINDOW:5:20 MINLEN:50
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 98815241 Both Surviving: 66901662 (67.70%) Forward Only Surviving: 20419940 (20.66%) Reverse Only Surviving: 3970186 (4.02%) Dropped: 7523453 (7.61%)
+TrimmomaticPE: Completed successfully
