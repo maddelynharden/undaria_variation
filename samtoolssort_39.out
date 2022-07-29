@@ -1,0 +1,6 @@
+==========================================
+SLURM_JOB_ID = 2339654
+SLURM_JOB_NODELIST = b02-39
+TMPDIR = /tmp/SLURM_2339654
+==========================================
+[bam_sort_core] merging from 24 files and 12 in-memory blocks...

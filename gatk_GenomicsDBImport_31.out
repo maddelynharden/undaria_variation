@@ -1,0 +1,49 @@
+==========================================
+SLURM_JOB_ID = 7187970
+SLURM_JOB_NODELIST = b22-21
+TMPDIR = /tmp/SLURM_7187970
+==========================================
+Using GATK jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar GenomicsDBImport -L interval_list_33/0030-scattered.interval_list -V GVCF.list --sequence-dictionary Kr2015_Undaria.pinnatifida_superscaffolds.dict --reference Kr2015_Undaria.pinnatifida_superscaffolds.fasta --genomicsdb-workspace-path 0030-scattered.interval_list_data
+08:43:59.254 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jan 21, 2022 8:43:59 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+08:43:59.355 INFO  GenomicsDBImport - ------------------------------------------------------------
+08:43:59.356 INFO  GenomicsDBImport - The Genome Analysis Toolkit (GATK) v4.2.2.0
+08:43:59.356 INFO  GenomicsDBImport - For support and documentation go to https://software.broadinstitute.org/gatk/
+08:43:59.356 INFO  GenomicsDBImport - Executing as mharden@b22-21.hpc.usc.edu on Linux v3.10.0-1062.4.1.el7.x86_64 amd64
+08:43:59.356 INFO  GenomicsDBImport - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_302-b08
+08:43:59.356 INFO  GenomicsDBImport - Start Date/Time: January 21, 2022 8:43:59 AM PST
+08:43:59.356 INFO  GenomicsDBImport - ------------------------------------------------------------
+08:43:59.356 INFO  GenomicsDBImport - ------------------------------------------------------------
+08:43:59.357 INFO  GenomicsDBImport - HTSJDK Version: 2.24.1
+08:43:59.357 INFO  GenomicsDBImport - Picard Version: 2.25.4
+08:43:59.357 INFO  GenomicsDBImport - Built for Spark Version: 2.4.5
+08:43:59.357 INFO  GenomicsDBImport - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+08:43:59.357 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+08:43:59.357 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+08:43:59.357 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+08:43:59.357 INFO  GenomicsDBImport - Deflater: IntelDeflater
+08:43:59.357 INFO  GenomicsDBImport - Inflater: IntelInflater
+08:43:59.357 INFO  GenomicsDBImport - GCS max retries/reopens: 20
+08:43:59.357 INFO  GenomicsDBImport - Requester pays: disabled
+08:43:59.357 INFO  GenomicsDBImport - Initializing engine
+08:44:00.833 INFO  FeatureManager - Using codec IntervalListCodec to read file file:///scratch/mharden/undaria_variation/interval_list_33/0030-scattered.interval_list
+08:44:00.848 INFO  IntervalArgumentCollection - Processing 19228639 bp from intervals
+08:44:00.866 INFO  GenomicsDBImport - Done initializing engine
+08:44:01.092 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.4.1-d59e886
+08:44:01.099 INFO  GenomicsDBImport - Vid Map JSON file will be written to /scratch/mharden/undaria_variation/0030-scattered.interval_list_data/vidmap.json
+08:44:01.099 INFO  GenomicsDBImport - Callset Map JSON file will be written to /scratch/mharden/undaria_variation/0030-scattered.interval_list_data/callset.json
+08:44:01.099 INFO  GenomicsDBImport - Complete VCF Header will be written to /scratch/mharden/undaria_variation/0030-scattered.interval_list_data/vcfheader.vcf
+08:44:01.099 INFO  GenomicsDBImport - Importing to workspace - /scratch/mharden/undaria_variation/0030-scattered.interval_list_data
+08:44:02.292 INFO  GenomicsDBImport - Importing batch 1 with 41 samples
+09:28:54.887 INFO  GenomicsDBImport - Importing batch 1 with 41 samples
+11:10:40.208 INFO  GenomicsDBImport - Importing batch 1 with 41 samples
+11:17:04.884 INFO  GenomicsDBImport - Done importing batch 1/1
+11:17:04.905 INFO  GenomicsDBImport - Import completed!
+11:17:04.905 INFO  GenomicsDBImport - Shutting down engine
+[January 21, 2022 11:17:04 AM PST] org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport done. Elapsed time: 153.09 minutes.
+Runtime.totalMemory()=1710751744
+Tool returned:
+true

@@ -1,0 +1,64 @@
+==========================================
+SLURM_JOB_ID = 7439937
+SLURM_JOB_NODELIST = b22-08
+TMPDIR = /tmp/SLURM_7439937
+==========================================
+Using GATK jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar MergeVcfs -R Kr2015_Undaria.pinnatifida_superscaffolds.fasta --SEQUENCE_DICTIONARY Kr2015_Undaria.pinnatifida_superscaffolds.dict -I 0000-scattered.interval_list.sorted.vcf.gz -O Undaria_Variants.vcf
+16:38:18.025 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sun Feb 13 16:38:18 PST 2022] MergeVcfs --INPUT 0000-scattered.interval_list.sorted.vcf.gz --OUTPUT Undaria_Variants.vcf --SEQUENCE_DICTIONARY Kr2015_Undaria.pinnatifida_superscaffolds.dict --REFERENCE_SEQUENCE Kr2015_Undaria.pinnatifida_superscaffolds.fasta --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX true --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Feb 13, 2022 4:38:18 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Sun Feb 13 16:38:18 PST 2022] Executing as mharden@b22-08.hpc.usc.edu on Linux 3.10.0-1062.4.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 1.8.0_302-b08; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.2.0
+INFO	2022-02-13 16:38:18	MergeVcfs	Processed        10,000 records.  Elapsed time: 00:00:00s.  Time for last 10,000:    0s.  Last read position: LG00:589,310
+INFO	2022-02-13 16:38:18	MergeVcfs	Processed        20,000 records.  Elapsed time: 00:00:00s.  Time for last 10,000:    0s.  Last read position: LG00:1,290,435
+INFO	2022-02-13 16:38:18	MergeVcfs	Processed        30,000 records.  Elapsed time: 00:00:00s.  Time for last 10,000:    0s.  Last read position: LG00:1,559,098
+INFO	2022-02-13 16:38:19	MergeVcfs	Processed        40,000 records.  Elapsed time: 00:00:00s.  Time for last 10,000:    0s.  Last read position: LG00:1,855,324
+INFO	2022-02-13 16:38:19	MergeVcfs	Processed        50,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: LG00:2,094,133
+INFO	2022-02-13 16:38:19	MergeVcfs	Processed        60,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: LG00:2,608,701
+INFO	2022-02-13 16:38:19	MergeVcfs	Processed        70,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: LG00:3,286,051
+INFO	2022-02-13 16:38:19	MergeVcfs	Processed        80,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: LG00:4,169,480
+INFO	2022-02-13 16:38:19	MergeVcfs	Processed        90,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: LG00:4,651,472
+INFO	2022-02-13 16:38:20	MergeVcfs	Processed       100,000 records.  Elapsed time: 00:00:01s.  Time for last 10,000:    0s.  Last read position: LG00:5,030,028
+INFO	2022-02-13 16:38:20	MergeVcfs	Processed       110,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: LG00:5,170,689
+INFO	2022-02-13 16:38:20	MergeVcfs	Processed       120,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: LG00:5,326,536
+INFO	2022-02-13 16:38:20	MergeVcfs	Processed       130,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: LG00:5,711,254
+INFO	2022-02-13 16:38:20	MergeVcfs	Processed       140,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: LG00:6,330,008
+INFO	2022-02-13 16:38:20	MergeVcfs	Processed       150,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: LG00:7,332,656
+INFO	2022-02-13 16:38:21	MergeVcfs	Processed       160,000 records.  Elapsed time: 00:00:02s.  Time for last 10,000:    0s.  Last read position: LG00:7,630,595
+INFO	2022-02-13 16:38:21	MergeVcfs	Processed       170,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: LG00:7,880,152
+INFO	2022-02-13 16:38:21	MergeVcfs	Processed       180,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: LG00:8,276,778
+INFO	2022-02-13 16:38:21	MergeVcfs	Processed       190,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: LG00:8,763,827
+INFO	2022-02-13 16:38:21	MergeVcfs	Processed       200,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: LG00:9,560,051
+INFO	2022-02-13 16:38:21	MergeVcfs	Processed       210,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: LG00:10,304,622
+INFO	2022-02-13 16:38:21	MergeVcfs	Processed       220,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: LG00:10,507,708
+INFO	2022-02-13 16:38:22	MergeVcfs	Processed       230,000 records.  Elapsed time: 00:00:03s.  Time for last 10,000:    0s.  Last read position: LG00:11,231,975
+INFO	2022-02-13 16:38:22	MergeVcfs	Processed       240,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: LG00:12,100,813
+INFO	2022-02-13 16:38:22	MergeVcfs	Processed       250,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: LG00:12,353,592
+INFO	2022-02-13 16:38:22	MergeVcfs	Processed       260,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: LG00:12,665,240
+INFO	2022-02-13 16:38:22	MergeVcfs	Processed       270,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: LG00:13,130,748
+INFO	2022-02-13 16:38:22	MergeVcfs	Processed       280,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: LG00:13,727,640
+INFO	2022-02-13 16:38:23	MergeVcfs	Processed       290,000 records.  Elapsed time: 00:00:04s.  Time for last 10,000:    0s.  Last read position: LG00:13,878,723
+INFO	2022-02-13 16:38:23	MergeVcfs	Processed       300,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: LG00:14,169,865
+INFO	2022-02-13 16:38:23	MergeVcfs	Processed       310,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: LG00:14,611,707
+INFO	2022-02-13 16:38:23	MergeVcfs	Processed       320,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: LG00:15,025,317
+INFO	2022-02-13 16:38:23	MergeVcfs	Processed       330,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: LG00:15,258,805
+INFO	2022-02-13 16:38:23	MergeVcfs	Processed       340,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: LG00:15,432,507
+INFO	2022-02-13 16:38:24	MergeVcfs	Processed       350,000 records.  Elapsed time: 00:00:05s.  Time for last 10,000:    0s.  Last read position: LG00:15,637,547
+INFO	2022-02-13 16:38:24	MergeVcfs	Processed       360,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: LG00:15,857,012
+INFO	2022-02-13 16:38:24	MergeVcfs	Processed       370,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: LG00:16,271,422
+INFO	2022-02-13 16:38:24	MergeVcfs	Processed       380,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: LG00:16,543,061
+INFO	2022-02-13 16:38:24	MergeVcfs	Processed       390,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: LG00:16,734,070
+INFO	2022-02-13 16:38:24	MergeVcfs	Processed       400,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: LG00:16,989,034
+INFO	2022-02-13 16:38:25	MergeVcfs	Processed       410,000 records.  Elapsed time: 00:00:06s.  Time for last 10,000:    0s.  Last read position: LG00:17,218,107
+INFO	2022-02-13 16:38:25	MergeVcfs	Processed       420,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: LG00:17,488,626
+INFO	2022-02-13 16:38:25	MergeVcfs	Processed       430,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: LG00:17,822,514
+INFO	2022-02-13 16:38:25	MergeVcfs	Processed       440,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: LG00:18,410,162
+INFO	2022-02-13 16:38:25	MergeVcfs	Processed       450,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: LG00:18,934,603
+INFO	2022-02-13 16:38:25	MergeVcfs	Processed       460,000 records.  Elapsed time: 00:00:07s.  Time for last 10,000:    0s.  Last read position: LG00:19,222,307
+16:38:25.800 WARN  IntelInflater - Zero Bytes Written : 0
+[Sun Feb 13 16:38:25 PST 2022] picard.vcf.MergeVcfs done. Elapsed time: 0.13 minutes.
+Runtime.totalMemory()=3086483456
+Tool returned:
+0

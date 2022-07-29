@@ -1,0 +1,15 @@
+==========================================
+SLURM_JOB_ID = 1269519
+SLURM_JOB_NODELIST = b08-12
+TMPDIR = /tmp/SLURM_1269519
+==========================================
+multiqc, version 1.11
+
+  /// MultiQC 🔍 | v1.11
+
+|           multiqc | Search path : /scratch/mharden/undaria_variation/fastqc_post_trim
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 164/164  |            fastqc | Found 82 reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : fastqc_post_trim/multiqc_report.html
+|           multiqc | Data        : fastqc_post_trim/multiqc_data
+|           multiqc | MultiQC complete

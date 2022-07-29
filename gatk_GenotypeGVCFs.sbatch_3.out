@@ -1,0 +1,269 @@
+==========================================
+SLURM_JOB_ID = 7188721
+SLURM_JOB_NODELIST = a04-17
+TMPDIR = /tmp/SLURM_7188721
+==========================================
+Using GATK jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar GenotypeGVCFs -R Kr2015_Undaria.pinnatifida_superscaffolds.fasta --sequence-dictionary Kr2015_Undaria.pinnatifida_superscaffolds.dict -V gendb://0002-scattered.interval_list_data -O 0002-scattered.interval_list.vcf.gz
+11:34:18.714 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jan 21, 2022 11:34:18 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+11:34:18.799 INFO  GenotypeGVCFs - ------------------------------------------------------------
+11:34:18.799 INFO  GenotypeGVCFs - The Genome Analysis Toolkit (GATK) v4.2.2.0
+11:34:18.799 INFO  GenotypeGVCFs - For support and documentation go to https://software.broadinstitute.org/gatk/
+11:34:18.799 INFO  GenotypeGVCFs - Executing as mharden@a04-17.hpc.usc.edu on Linux v3.10.0-1062.4.1.el7.x86_64 amd64
+11:34:18.799 INFO  GenotypeGVCFs - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_302-b08
+11:34:18.799 INFO  GenotypeGVCFs - Start Date/Time: January 21, 2022 11:34:18 AM PST
+11:34:18.799 INFO  GenotypeGVCFs - ------------------------------------------------------------
+11:34:18.799 INFO  GenotypeGVCFs - ------------------------------------------------------------
+11:34:18.800 INFO  GenotypeGVCFs - HTSJDK Version: 2.24.1
+11:34:18.800 INFO  GenotypeGVCFs - Picard Version: 2.25.4
+11:34:18.800 INFO  GenotypeGVCFs - Built for Spark Version: 2.4.5
+11:34:18.800 INFO  GenotypeGVCFs - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+11:34:18.800 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+11:34:18.800 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+11:34:18.800 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+11:34:18.800 INFO  GenotypeGVCFs - Deflater: IntelDeflater
+11:34:18.800 INFO  GenotypeGVCFs - Inflater: IntelInflater
+11:34:18.800 INFO  GenotypeGVCFs - GCS max retries/reopens: 20
+11:34:18.800 INFO  GenotypeGVCFs - Requester pays: disabled
+11:34:18.800 INFO  GenotypeGVCFs - Initializing engine
+11:34:19.216 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.4.1-d59e886
+11:34:19.620 info  NativeGenomicsDB - pid=60365 tid=60366 No valid combination operation found for INFO field InbreedingCoeff  - the field will NOT be part of INFO fields in the generated VCF records
+11:34:19.620 info  NativeGenomicsDB - pid=60365 tid=60366 No valid combination operation found for INFO field MLEAC  - the field will NOT be part of INFO fields in the generated VCF records
+11:34:19.620 info  NativeGenomicsDB - pid=60365 tid=60366 No valid combination operation found for INFO field MLEAF  - the field will NOT be part of INFO fields in the generated VCF records
+11:34:19.883 INFO  GenotypeGVCFs - Done initializing engine
+11:34:19.911 INFO  ProgressMeter - Starting traversal
+11:34:19.911 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+11:35:37.638 INFO  ProgressMeter -        LG00:38458817              1.3                  1000            771.9
+11:35:47.650 INFO  ProgressMeter -        LG00:38579701              1.5                 95000          64965.4
+11:36:03.147 INFO  ProgressMeter -        LG00:38606651              1.7                116000          67418.3
+11:36:13.263 INFO  ProgressMeter -        LG00:38697067              1.9                201000         106394.2
+11:36:48.626 INFO  ProgressMeter -        LG00:38700070              2.5                204000          82305.1
+11:36:58.647 INFO  ProgressMeter -        LG00:38837924              2.6                313000         118309.6
+11:37:15.541 INFO  ProgressMeter -        LG00:38887249              2.9                354000         120936.1
+11:37:25.581 INFO  ProgressMeter -        LG00:39063664              3.1                469000         151559.2
+11:38:02.920 INFO  ProgressMeter -        LG00:39106957              3.7                509000         136945.1
+11:38:13.002 INFO  ProgressMeter -        LG00:39294857              3.9                631000         162425.8
+11:38:29.300 INFO  ProgressMeter -        LG00:39309550              4.2                645000         155179.9
+11:38:39.359 INFO  ProgressMeter -        LG00:39448813              4.3                743000         171826.3
+11:39:18.248 INFO  ProgressMeter -        LG00:39463868              5.0                758000         152445.6
+11:39:28.300 INFO  ProgressMeter -        LG00:39541724              5.1                827000         160900.7
+11:39:46.025 INFO  ProgressMeter -        LG00:39612137              5.4                869000         159882.7
+11:39:56.335 INFO  ProgressMeter -        LG00:39700127              5.6                953000         169964.6
+11:40:34.805 INFO  ProgressMeter -        LG00:39713230              6.2                966000         154603.7
+11:40:44.869 INFO  ProgressMeter -        LG00:39873989              6.4               1068000         166459.7
+11:41:00.891 INFO  ProgressMeter -        LG00:39895063              6.7               1089000         162950.8
+11:41:12.095 INFO  ProgressMeter -        LG00:39981663              6.9               1165000         169584.5
+11:41:46.491 INFO  ProgressMeter -        LG00:39999425              7.4               1182000         158806.9
+11:42:10.603 INFO  ProgressMeter -        LG00:40089914              7.8               1271000         162016.8
+11:42:20.622 INFO  ProgressMeter -        LG00:40192606              8.0               1354000         168999.7
+11:42:58.296 INFO  ProgressMeter -        LG00:40202815              8.6               1364000         157874.9
+11:43:22.773 INFO  ProgressMeter -        LG00:40281830              9.0               1442000         159377.5
+11:43:33.733 INFO  ProgressMeter -        LG00:40367522              9.2               1518000         164458.1
+11:44:08.460 INFO  ProgressMeter -        LG00:40397925              9.8               1547000         157709.9
+11:44:34.789 INFO  ProgressMeter -        LG00:40500134             10.2               1645000         160519.6
+11:44:44.838 INFO  ProgressMeter -        LG00:40597779             10.4               1720000         165139.3
+11:45:21.257 INFO  ProgressMeter -        LG00:40625416             11.0               1747000         158494.9
+11:45:31.329 INFO  ProgressMeter -        LG00:40757440             11.2               1838000         164249.4
+11:45:52.465 INFO  ProgressMeter -        LG00:40777222             11.5               1856000         160796.1
+11:46:03.099 INFO  ProgressMeter -        LG00:40923182             11.7               1944000         165873.1
+11:46:44.370 INFO  ProgressMeter -        LG00:40962505             12.4               1980000         159579.0
+11:46:54.381 INFO  ProgressMeter -        LG00:41045318             12.6               2057000         163585.0
+11:47:13.142 INFO  ProgressMeter -        LG00:41071063             12.9               2080000         161400.7
+11:47:23.204 INFO  ProgressMeter -        LG00:41156470             13.1               2161000         165531.9
+11:47:58.178 INFO  ProgressMeter -        LG00:41158471             13.6               2163000         158603.5
+11:48:08.890 INFO  ProgressMeter -        LG00:41240643             13.8               2240000         162127.1
+11:48:27.343 INFO  ProgressMeter -        LG00:41254938             14.1               2254000         159588.0
+11:48:37.351 INFO  ProgressMeter -        LG00:41340346             14.3               2336000         163463.3
+11:49:13.267 INFO  ProgressMeter -        LG00:41341346             14.9               2337000         156958.7
+11:49:23.336 INFO  ProgressMeter -        LG00:41410511             15.1               2404000         159659.1
+11:49:40.626 INFO  ProgressMeter -        LG00:41429834             15.3               2423000         157899.0
+11:49:50.685 INFO  ProgressMeter -        LG00:41541983             15.5               2515000         162123.1
+11:50:31.609 INFO  ProgressMeter -        LG00:41664772             16.2               2589000         159864.5
+11:50:41.999 INFO  ProgressMeter -        LG00:41754829             16.4               2675000         163427.3
+11:50:59.293 INFO  ProgressMeter -        LG00:41789808             16.7               2709000         162640.5
+11:51:44.871 INFO  ProgressMeter -        LG00:41916507             17.4               2815000         161633.0
+11:51:54.871 INFO  ProgressMeter -        LG00:42022652             17.6               2906000         165276.4
+11:52:14.522 INFO  ProgressMeter -        LG00:42068787             17.9               2928000         163482.4
+11:52:24.565 INFO  ProgressMeter -        LG00:42182067             18.1               3015000         166781.3
+11:53:24.818 INFO  ProgressMeter -        LG00:42285687             19.1               3076000         161200.9
+11:53:34.836 INFO  ProgressMeter -        LG00:42442432             19.2               3179000         165153.6
+11:53:53.351 INFO  ProgressMeter -        LG00:42471635             19.6               3207000         163979.6
+11:54:04.309 INFO  ProgressMeter -        LG00:42554973             19.7               3288000         166565.6
+11:54:40.851 INFO  ProgressMeter -        LG00:42557973             20.3               3291000         161727.8
+11:54:50.916 INFO  ProgressMeter -        LG00:42669593             20.5               3390000         165231.0
+11:55:07.080 INFO  ProgressMeter -        LG00:42673246             20.8               3393000         163233.7
+11:55:18.676 INFO  ProgressMeter -        LG00:42787558             21.0               3475000         165638.5
+11:55:54.544 INFO  ProgressMeter -        LG00:42802113             21.6               3488000         161652.0
+11:56:04.547 INFO  ProgressMeter -        LG00:42933131             21.7               3600000         165563.4
+11:56:22.681 INFO  ProgressMeter -        LG00:42966696             22.0               3619000         164155.5
+11:56:34.435 INFO  ProgressMeter -        LG00:43076529             22.2               3700000         166351.6
+11:57:12.702 INFO  ProgressMeter -        LG00:43091368             22.9               3714000         162326.2
+11:57:22.756 INFO  ProgressMeter -        LG00:43191133             23.0               3795000         164660.5
+11:57:38.955 INFO  ProgressMeter -        LG00:43201142             23.3               3805000         163182.9
+11:57:49.062 INFO  ProgressMeter -        LG00:43275724             23.5               3875000         164993.0
+11:58:25.877 INFO  ProgressMeter -        LG00:43291016             24.1               3889000         161373.1
+11:58:50.751 INFO  ProgressMeter -        LG00:43381581             24.5               3976000         162193.1
+11:59:00.781 INFO  ProgressMeter -        LG00:43461725             24.7               4047000         163971.2
+11:59:36.795 INFO  ProgressMeter -        LG00:43518544             25.3               4076000         161225.2
+11:59:46.811 INFO  ProgressMeter -        LG00:43666126             25.4               4167000         163743.5
+12:00:04.976 INFO  ProgressMeter -        LG00:43706349             25.8               4191000         162750.4
+12:00:14.998 INFO  ProgressMeter -        LG00:43878469             25.9               4303000         166022.9
+12:00:53.834 INFO  ProgressMeter -        LG00:43906504             26.6               4328000         162918.8
+12:01:03.907 INFO  ProgressMeter -        LG00:43983985             26.7               4401000         164626.4
+12:01:24.188 INFO  ProgressMeter -        LG00:43993140             27.1               4410000         162903.2
+12:01:34.289 INFO  ProgressMeter -        LG00:44153243             27.2               4522000         166008.1
+12:02:18.672 INFO  ProgressMeter -        LG00:44380010             28.0               4630000         165479.2
+12:02:28.733 INFO  ProgressMeter -        LG00:44473853             28.1               4711000         167371.2
+12:02:49.255 INFO  ProgressMeter -        LG00:44526725             28.5               4749000         166695.5
+12:02:59.702 INFO  ProgressMeter -        LG00:44727334             28.7               4847000         169101.9
+12:03:41.226 INFO  ProgressMeter -        LG00:44781079             29.4               4899000         166886.7
+12:03:51.266 INFO  ProgressMeter -        LG00:44898540             29.5               4999000         169328.0
+12:04:08.507 INFO  ProgressMeter -        LG00:44910417             29.8               5007000         167964.1
+12:04:18.529 INFO  ProgressMeter -        LG00:45036112             30.0               5094000         169930.5
+12:04:57.942 INFO  ProgressMeter -        LG00:45092618             30.6               5145000         167951.5
+12:05:07.982 INFO  ProgressMeter -        LG00:45190780             30.8               5229000         169766.2
+12:05:32.223 INFO  ProgressMeter -        LG00:45295207             31.2               5308000         170099.9
+12:05:42.277 INFO  ProgressMeter -        LG00:45449695             31.4               5417000         172665.7
+12:06:18.800 INFO  ProgressMeter -        LG00:45463105             32.0               5430000         169785.7
+12:06:28.831 INFO  ProgressMeter -        LG00:45567707             32.1               5520000         171702.3
+12:06:47.052 INFO  ProgressMeter -        LG00:45609928             32.5               5545000         170865.9
+12:07:36.918 INFO  ProgressMeter -        LG00:45721750             33.3               5641000         169483.6
+12:07:46.924 INFO  ProgressMeter -        LG00:45844897             33.5               5745000         171747.8
+12:08:04.785 INFO  ProgressMeter -        LG00:45847981             33.7               5748000         170321.7
+12:08:14.800 INFO  ProgressMeter -        LG00:46024748             33.9               5845000         172343.6
+12:08:53.385 INFO  ProgressMeter -        LG00:46046226             34.6               5866000         169744.1
+12:09:03.398 INFO  ProgressMeter -        LG00:46186946             34.7               5967000         171836.9
+12:09:21.766 INFO  ProgressMeter -        LG00:46221155             35.0               5993000         171077.5
+12:09:31.791 INFO  ProgressMeter -        LG00:46307069             35.2               6064000         172282.5
+12:10:14.190 INFO  ProgressMeter -        LG00:46365476             35.9               6105000         170033.7
+12:10:25.345 INFO  ProgressMeter -        LG00:46488812             36.1               6219000         172316.5
+12:10:45.123 INFO  ProgressMeter -        LG00:46542995             36.4               6267000         172074.8
+12:10:57.035 INFO  ProgressMeter -        LG00:46674270             36.6               6376000         174118.5
+12:11:36.845 INFO  ProgressMeter -        LG00:46714153             37.3               6401000         171690.4
+12:11:46.912 INFO  ProgressMeter -        LG00:46797966             37.5               6482000         173084.0
+12:12:02.947 INFO  ProgressMeter -        LG00:46801979             37.7               6485000         171937.2
+12:12:14.569 INFO  ProgressMeter -        LG00:46912727             37.9               6564000         173142.5
+12:12:54.324 INFO  ProgressMeter -        LG00:46975124             38.6               6604000         171205.4
+12:13:20.467 INFO  ProgressMeter -        LG00:47118245             39.0               6711000         172036.0
+12:13:31.300 INFO  ProgressMeter -        LG00:47230754             39.2               6804000         173616.5
+12:14:12.296 INFO  ProgressMeter -        LG00:47251895             39.9               6825000         171168.1
+12:14:22.311 INFO  ProgressMeter -        LG00:47379311             40.0               6908000         172527.5
+12:14:41.016 INFO  ProgressMeter -        LG00:47431417             40.4               6952000         172285.0
+12:14:52.022 INFO  ProgressMeter -        LG00:47566961             40.5               7041000         173701.0
+12:15:28.668 INFO  ProgressMeter -        LG00:47593118             41.1               7067000         171754.4
+12:15:38.701 INFO  ProgressMeter -        LG00:47717778             41.3               7155000         173189.3
+12:15:58.170 INFO  ProgressMeter -        LG00:47722790             41.6               7160000         171959.8
+12:16:08.188 INFO  ProgressMeter -        LG00:47795960             41.8               7232000         172995.2
+12:16:43.923 INFO  ProgressMeter -        LG00:47803981             42.4               7240000         170753.9
+12:16:54.472 INFO  ProgressMeter -        LG00:47902473             42.6               7321000         171951.3
+12:17:14.132 INFO  ProgressMeter -        LG00:47912632             42.9               7330000         170847.8
+12:17:24.136 INFO  ProgressMeter -        LG00:48013401             43.1               7409000         172020.6
+12:18:08.212 INFO  ProgressMeter -        LG00:48141494             43.8               7465000         170414.3
+12:18:18.652 INFO  ProgressMeter -        LG00:48214236             44.0               7535000         171331.7
+12:18:40.714 INFO  ProgressMeter -        LG00:48262569             44.3               7561000         170497.4
+12:18:50.755 INFO  ProgressMeter -        LG00:48353445             44.5               7635000         171518.8
+12:19:28.367 INFO  ProgressMeter -        LG00:48366669             45.1               7648000         169424.9
+12:19:39.890 INFO  ProgressMeter -        LG00:48566380             45.3               7749000         170935.1
+12:19:59.577 INFO  ProgressMeter -        LG00:48608949             45.7               7781000         170407.6
+12:20:47.420 INFO  ProgressMeter -        LG00:48726269             46.5               7874000         169484.7
+12:20:57.466 INFO  ProgressMeter -        LG00:48824762             46.6               7957000         170656.2
+12:21:17.602 INFO  ProgressMeter -        LG00:48857091             47.0               7980000         169926.4
+12:21:27.694 INFO  ProgressMeter -        LG00:48982925             47.1               8061000         171038.6
+12:22:06.296 INFO  ProgressMeter -        LG00:49016762             47.8               8092000         169384.1
+12:22:16.323 INFO  ProgressMeter -        LG00:49120592             47.9               8177000         170566.7
+12:22:33.413 INFO  ProgressMeter -        LG00:49128659             48.2               8185000         169725.1
+12:22:43.465 INFO  ProgressMeter -        LG00:49243937             48.4               8281000         171121.3
+12:23:25.692 INFO  ProgressMeter -        LG00:49270709             49.1               8306000         169177.5
+12:23:35.696 INFO  ProgressMeter -        LG00:49391655             49.3               8391000         170330.4
+12:23:53.268 INFO  ProgressMeter -        LG00:49407924             49.6               8405000         169606.3
+12:24:03.294 INFO  ProgressMeter -        LG00:49558646             49.7               8500000         170946.9
+12:24:44.476 INFO  ProgressMeter -        LG00:49593997             50.4               8534000         169293.8
+12:25:08.398 INFO  ProgressMeter -        LG00:49717561             50.8               8628000         169815.4
+12:25:24.240 INFO  ProgressMeter -        LG00:49797970             51.1               8705000         170445.1
+12:26:11.725 INFO  ProgressMeter -        LG00:49811466             51.9               8718000         168094.9
+12:26:23.138 INFO  ProgressMeter -        LG00:50138324             52.1               8840000         169824.4
+12:26:43.024 INFO  ProgressMeter -        LG00:50184438             52.4               8875000         169418.0
+12:26:53.906 INFO  ProgressMeter -        LG00:50250820             52.6               8938000         170032.0
+12:27:34.582 INFO  ProgressMeter -        LG00:50378675             53.2               8994000         168918.8
+12:27:44.643 INFO  ProgressMeter -        LG00:50507573             53.4               9097000         170316.9
+12:28:02.031 INFO  ProgressMeter -        LG00:50524072             53.7               9113000         169695.7
+12:28:12.873 INFO  ProgressMeter -        LG00:50628058             53.9               9200000         170741.3
+12:28:53.336 INFO  ProgressMeter -        LG00:50749507             54.6               9257000         169675.5
+12:29:03.384 INFO  ProgressMeter -        LG00:50929867             54.7               9365000         171129.8
+12:29:24.060 INFO  ProgressMeter -        LG00:50988461             55.1               9409000         170857.9
+12:29:34.665 INFO  ProgressMeter -        LG00:51097297             55.2               9497000         171904.2
+12:30:11.361 INFO  ProgressMeter -        LG00:51122950             55.9               9522000         170469.5
+12:30:22.434 INFO  ProgressMeter -        LG00:51224820             56.0               9608000         171442.7
+12:30:38.082 INFO  ProgressMeter -        LG00:51227849             56.3               9611000         170701.8
+12:31:26.332 INFO  ProgressMeter -        LG00:51321502             57.1               9702000         169891.6
+12:31:36.418 INFO  ProgressMeter -        LG00:51409521             57.3               9782000         170789.7
+12:31:57.802 INFO  ProgressMeter -        LG00:51423861             57.6               9796000         169976.4
+12:32:07.885 INFO  ProgressMeter -        LG00:51525609             57.8               9876000         170866.3
+12:32:51.432 INFO  ProgressMeter -        LG00:51639893             58.5               9950000         170011.8
+12:33:01.570 INFO  ProgressMeter -        LG00:51722743             58.7              10026000         170817.2
+12:33:23.615 INFO  ProgressMeter -        LG00:51751612             59.1              10042000         170025.5
+12:33:33.658 INFO  ProgressMeter -        LG00:51877220             59.2              10125000         170946.3
+12:34:17.640 INFO  ProgressMeter -        LG00:51915886             60.0              10155000         169356.8
+12:34:27.670 INFO  ProgressMeter -        LG00:52009908             60.1              10243000         170349.5
+12:34:44.598 INFO  ProgressMeter -        LG00:52018089             60.4              10251000         169686.4
+12:34:54.635 INFO  ProgressMeter -        LG00:52146139             60.6              10340000         170687.0
+12:35:38.734 INFO  ProgressMeter -        LG00:52283953             61.3              10435000         170190.3
+12:35:48.758 INFO  ProgressMeter -        LG00:52392276             61.5              10520000         171110.4
+12:36:10.121 INFO  ProgressMeter -        LG00:52505923             61.8              10573000         170982.2
+12:36:20.142 INFO  ProgressMeter -        LG00:52599950             62.0              10651000         171779.7
+12:37:03.755 INFO  ProgressMeter -        LG00:52702383             62.7              10711000         170745.7
+12:37:14.540 INFO  ProgressMeter -        LG00:52842308             62.9              10802000         171704.3
+12:37:31.985 INFO  ProgressMeter -        LG00:52873910             63.2              10833000         171404.9
+12:37:41.993 INFO  ProgressMeter -        LG00:52995393             63.4              10925000         172405.6
+12:38:22.631 INFO  ProgressMeter -        LG00:53047171             64.0              10959000         171113.2
+12:38:33.002 INFO  ProgressMeter -        LG00:53161022             64.2              11042000         171945.1
+12:38:52.126 INFO  ProgressMeter -        LG00:53196558             64.5              11074000         171591.7
+12:39:02.181 INFO  ProgressMeter -        LG00:53352755             64.7              11172000         172661.9
+12:39:39.368 INFO  ProgressMeter -        LG00:53379283             65.3              11197000         171406.4
+12:39:49.427 INFO  ProgressMeter -        LG00:53546468             65.5              11293000         172433.4
+12:40:07.100 INFO  ProgressMeter -        LG00:53603195             65.8              11334000         172284.6
+12:40:17.136 INFO  ProgressMeter -        LG00:53689236             66.0              11417000         173106.2
+12:40:59.138 INFO  ProgressMeter -        LG00:53768161             66.7              11476000         172173.3
+12:41:09.681 INFO  ProgressMeter -        LG00:53932169             66.8              11581000         173291.7
+12:41:30.281 INFO  ProgressMeter -        LG00:54061748             67.2              11641000         173299.2
+12:41:41.963 INFO  ProgressMeter -        LG00:54170839             67.4              11732000         174149.2
+12:42:18.276 INFO  ProgressMeter -        LG00:54240765             68.0              11779000         173290.0
+12:42:28.449 INFO  ProgressMeter -        LG00:54417029             68.1              11901000         174649.2
+12:42:51.498 INFO  ProgressMeter -        LG00:54493913             68.5              11955000         174458.2
+12:43:01.512 INFO  ProgressMeter -        LG00:54633639             68.7              12048000         175388.2
+12:43:43.948 INFO  ProgressMeter -        LG00:54674046             69.4              12087000         174162.7
+12:43:54.024 INFO  ProgressMeter -        LG00:54772371             69.6              12176000         175021.6
+12:44:13.333 INFO  ProgressMeter -        LG00:54824760             69.9              12203000         174602.0
+12:44:23.344 INFO  ProgressMeter -        LG00:55060267             70.1              12300000         175570.8
+12:45:05.462 INFO  ProgressMeter -        LG00:55130604             70.8              12357000         174634.6
+12:45:15.607 INFO  ProgressMeter -        LG00:55332186             70.9              12473000         175853.7
+12:45:34.704 INFO  ProgressMeter -        LG00:55377980             71.2              12510000         175587.4
+12:45:44.722 INFO  ProgressMeter -        LG00:55557170             71.4              12613000         176619.2
+12:46:26.414 INFO  ProgressMeter -        LG00:55637209             72.1              12668000         175680.0
+12:46:36.460 INFO  ProgressMeter -        LG00:55741521             72.3              12755000         176476.7
+12:46:54.053 INFO  ProgressMeter -        LG00:55757258             72.6              12770000         175970.4
+12:47:04.065 INFO  ProgressMeter -        LG00:55932829             72.7              12879000         177065.2
+12:47:39.916 INFO  ProgressMeter -        LG00:55946130             73.3              12890000         175772.6
+12:47:50.672 INFO  ProgressMeter -        LG00:56194088             73.5              13011000         176989.9
+12:48:12.031 INFO  ProgressMeter -        LG00:56308039             73.9              13094000         177260.5
+12:48:54.580 INFO  ProgressMeter -        LG00:56456395             74.6              13205000         177063.4
+12:49:04.599 INFO  ProgressMeter -        LG00:56695267             74.7              13306000         178019.1
+12:49:23.731 INFO  ProgressMeter -        LG00:56743154             75.1              13350000         177849.0
+12:49:33.790 INFO  ProgressMeter -        LG00:56889491             75.2              13457000         178875.0
+12:50:13.493 INFO  ProgressMeter -        LG00:56935785             75.9              13500000         177881.9
+12:50:24.364 INFO  ProgressMeter -        LG00:57088377             76.1              13592000         178667.6
+12:50:38.478 INFO  ProgressMeter -        LG00:57117699             76.3              13612000         178379.0
+12:51:20.115 INFO  ProgressMeter -        LG00:57205929             77.0              13696000         177862.3
+12:51:30.308 INFO  ProgressMeter -        LG00:57314955             77.2              13791000         178701.7
+12:51:49.280 INFO  ProgressMeter -        LG00:57373937             77.5              13831000         178488.7
+12:52:19.783 INFO  ProgressMeter -        LG00:57469673             78.0              13914000         178389.5
+12:52:29.792 INFO  ProgressMeter -        LG00:57684448             78.2              14032000         179518.4
+GENOMICSDB_TIMER,GenomicsDB iterator next() timer,Wall-clock time(s),3962.280179598253,Cpu time(s),728.0931583335837
+12:52:29.904 INFO  ProgressMeter -        LG00:57685474             78.2              14033396         179532.0
+12:52:29.904 INFO  ProgressMeter - Traversal complete. Processed 14033396 total variants in 78.2 minutes.
+12:52:29.915 INFO  GenotypeGVCFs - Shutting down engine
+[January 21, 2022 12:52:29 PM PST] org.broadinstitute.hellbender.tools.walkers.GenotypeGVCFs done. Elapsed time: 78.19 minutes.
+Runtime.totalMemory()=1495269376

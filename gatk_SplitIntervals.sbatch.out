@@ -1,0 +1,39 @@
+==========================================
+SLURM_JOB_ID = 7185361
+SLURM_JOB_NODELIST = a01-11
+TMPDIR = /tmp/SLURM_7185361
+==========================================
+Using GATK jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar SplitIntervals -R Kr2015_Undaria.pinnatifida_superscaffolds.fasta --sequence-dictionary Kr2015_Undaria.pinnatifida_superscaffolds.dict -O interval_list_33 --scatter-count 33
+22:27:29.238 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jan 20, 2022 10:27:29 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+22:27:29.325 INFO  SplitIntervals - ------------------------------------------------------------
+22:27:29.325 INFO  SplitIntervals - The Genome Analysis Toolkit (GATK) v4.2.2.0
+22:27:29.325 INFO  SplitIntervals - For support and documentation go to https://software.broadinstitute.org/gatk/
+22:27:29.326 INFO  SplitIntervals - Executing as mharden@a01-11.hpc.usc.edu on Linux v3.10.0-1062.4.1.el7.x86_64 amd64
+22:27:29.326 INFO  SplitIntervals - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_302-b08
+22:27:29.326 INFO  SplitIntervals - Start Date/Time: January 20, 2022 10:27:29 PM PST
+22:27:29.326 INFO  SplitIntervals - ------------------------------------------------------------
+22:27:29.326 INFO  SplitIntervals - ------------------------------------------------------------
+22:27:29.326 INFO  SplitIntervals - HTSJDK Version: 2.24.1
+22:27:29.326 INFO  SplitIntervals - Picard Version: 2.25.4
+22:27:29.326 INFO  SplitIntervals - Built for Spark Version: 2.4.5
+22:27:29.326 INFO  SplitIntervals - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+22:27:29.326 INFO  SplitIntervals - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+22:27:29.326 INFO  SplitIntervals - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+22:27:29.326 INFO  SplitIntervals - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+22:27:29.326 INFO  SplitIntervals - Deflater: IntelDeflater
+22:27:29.326 INFO  SplitIntervals - Inflater: IntelInflater
+22:27:29.327 INFO  SplitIntervals - GCS max retries/reopens: 20
+22:27:29.327 INFO  SplitIntervals - Requester pays: disabled
+22:27:29.327 INFO  SplitIntervals - Initializing engine
+22:27:29.530 INFO  SplitIntervals - Done initializing engine
+22:27:29.699 INFO  ProgressMeter - Starting traversal
+22:27:29.699 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Records Processed   Records/Minute
+22:27:29.699 INFO  ProgressMeter -             unmapped              0.0                     0              NaN
+22:27:29.700 INFO  ProgressMeter - Traversal complete. Processed 0 total records in 0.0 minutes.
+22:27:29.700 INFO  SplitIntervals - Shutting down engine
+[January 20, 2022 10:27:29 PM PST] org.broadinstitute.hellbender.tools.walkers.SplitIntervals done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2160066560

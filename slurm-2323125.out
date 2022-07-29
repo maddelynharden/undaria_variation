@@ -1,0 +1,7 @@
+==========================================
+SLURM_JOB_ID = 2323125
+SLURM_JOB_NODELIST = b02-39
+TMPDIR = /tmp/SLURM_2323125
+==========================================
+[E::hts_open_format] Failed to open file SRR12223736_SRP271933_Undaria_pinnatifida_individual_12_2016-01-12_INTRO_NZ_Lyall_2_New_Zealand.sam.sam
+samtools sort: can't open "SRR12223736_SRP271933_Undaria_pinnatifida_individual_12_2016-01-12_INTRO_NZ_Lyall_2_New_Zealand.sam.sam": No such file or directory

@@ -1,0 +1,25 @@
+==========================================
+SLURM_JOB_ID = 7439974
+SLURM_JOB_NODELIST = a03-03
+TMPDIR = /tmp/SLURM_7439974
+==========================================
+Using GATK jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar MergeVcfs -R Kr2015_Undaria.pinnatifida_superscaffolds.fasta --SEQUENCE_DICTIONARY Kr2015_Undaria.pinnatifida_superscaffolds.dict -I .sorted.vcf.gz -O Undaria_Variants.vcf
+16:38:39.278 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sun Feb 13 16:38:39 PST 2022] MergeVcfs --INPUT .sorted.vcf.gz --OUTPUT Undaria_Variants.vcf --SEQUENCE_DICTIONARY Kr2015_Undaria.pinnatifida_superscaffolds.dict --REFERENCE_SEQUENCE Kr2015_Undaria.pinnatifida_superscaffolds.fasta --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX true --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Feb 13, 2022 4:38:39 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Sun Feb 13 16:38:39 PST 2022] Executing as mharden@a03-03.hpc.usc.edu on Linux 3.10.0-1062.4.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 1.8.0_302-b08; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.2.0
+[Sun Feb 13 16:38:39 PST 2022] picard.vcf.MergeVcfs done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2143813632
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+htsjdk.samtools.SAMException: Cannot read non-existent file: file:///scratch/mharden/undaria_variation/.sorted.vcf.gz
+	at htsjdk.samtools.util.IOUtil.assertFileIsReadable(IOUtil.java:498)
+	at htsjdk.samtools.util.IOUtil.assertFileIsReadable(IOUtil.java:485)
+	at picard.vcf.MergeVcfs.doWork(MergeVcfs.java:177)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at org.broadinstitute.hellbender.cmdline.PicardCommandLineProgramExecutor.instanceMain(PicardCommandLineProgramExecutor.java:37)
+	at org.broadinstitute.hellbender.Main.runCommandLineProgram(Main.java:160)
+	at org.broadinstitute.hellbender.Main.mainEntry(Main.java:203)
+	at org.broadinstitute.hellbender.Main.main(Main.java:289)

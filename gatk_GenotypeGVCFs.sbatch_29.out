@@ -1,0 +1,370 @@
+==========================================
+SLURM_JOB_ID = 7188793
+SLURM_JOB_NODELIST = a02-07
+TMPDIR = /tmp/SLURM_7188793
+==========================================
+Using GATK jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar GenotypeGVCFs -R Kr2015_Undaria.pinnatifida_superscaffolds.fasta --sequence-dictionary Kr2015_Undaria.pinnatifida_superscaffolds.dict -V gendb://0028-scattered.interval_list_data -O 0028-scattered.interval_list.vcf.gz
+12:10:26.115 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Jan 21, 2022 12:10:26 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+12:10:26.202 INFO  GenotypeGVCFs - ------------------------------------------------------------
+12:10:26.202 INFO  GenotypeGVCFs - The Genome Analysis Toolkit (GATK) v4.2.2.0
+12:10:26.202 INFO  GenotypeGVCFs - For support and documentation go to https://software.broadinstitute.org/gatk/
+12:10:26.202 INFO  GenotypeGVCFs - Executing as mharden@a02-07.hpc.usc.edu on Linux v3.10.0-1062.4.1.el7.x86_64 amd64
+12:10:26.202 INFO  GenotypeGVCFs - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_302-b08
+12:10:26.202 INFO  GenotypeGVCFs - Start Date/Time: January 21, 2022 12:10:26 PM PST
+12:10:26.202 INFO  GenotypeGVCFs - ------------------------------------------------------------
+12:10:26.202 INFO  GenotypeGVCFs - ------------------------------------------------------------
+12:10:26.203 INFO  GenotypeGVCFs - HTSJDK Version: 2.24.1
+12:10:26.203 INFO  GenotypeGVCFs - Picard Version: 2.25.4
+12:10:26.203 INFO  GenotypeGVCFs - Built for Spark Version: 2.4.5
+12:10:26.203 INFO  GenotypeGVCFs - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+12:10:26.203 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+12:10:26.203 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+12:10:26.203 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+12:10:26.203 INFO  GenotypeGVCFs - Deflater: IntelDeflater
+12:10:26.203 INFO  GenotypeGVCFs - Inflater: IntelInflater
+12:10:26.203 INFO  GenotypeGVCFs - GCS max retries/reopens: 20
+12:10:26.203 INFO  GenotypeGVCFs - Requester pays: disabled
+12:10:26.203 INFO  GenotypeGVCFs - Initializing engine
+12:10:26.621 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.4.1-d59e886
+12:10:27.153 info  NativeGenomicsDB - pid=41334 tid=41335 No valid combination operation found for INFO field InbreedingCoeff  - the field will NOT be part of INFO fields in the generated VCF records
+12:10:27.154 info  NativeGenomicsDB - pid=41334 tid=41335 No valid combination operation found for INFO field MLEAC  - the field will NOT be part of INFO fields in the generated VCF records
+12:10:27.154 info  NativeGenomicsDB - pid=41334 tid=41335 No valid combination operation found for INFO field MLEAF  - the field will NOT be part of INFO fields in the generated VCF records
+12:10:27.505 INFO  GenotypeGVCFs - Done initializing engine
+12:10:27.535 INFO  ProgressMeter - Starting traversal
+12:10:27.535 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+12:11:52.875 INFO  ProgressMeter -          LG23:575672              1.4                  1000            703.1
+12:12:02.920 INFO  ProgressMeter -          LG23:675450              1.6                 85000          53467.5
+12:12:20.895 INFO  ProgressMeter -          LG23:683461              1.9                 93000          49223.7
+12:12:32.187 INFO  ProgressMeter -          LG23:762099              2.1                169000          81346.5
+12:13:09.264 INFO  ProgressMeter -          LG23:769103              2.7                176000          65294.4
+12:13:36.183 INFO  ProgressMeter -          LG23:851500              3.1                257000          81739.5
+12:13:46.557 INFO  ProgressMeter -          LG23:921211              3.3                326000          98280.6
+12:14:25.427 INFO  ProgressMeter -          LG23:935235              4.0                340000          85753.2
+12:14:51.590 INFO  ProgressMeter -         LG23:1020687              4.4                425000          96570.8
+12:15:01.647 INFO  ProgressMeter -         LG23:1110470              4.6                504000         110319.9
+12:15:40.198 INFO  ProgressMeter -         LG23:1139831              5.2                532000         102090.7
+12:15:50.264 INFO  ProgressMeter -         LG23:1209293              5.4                600000         111548.7
+12:16:10.308 INFO  ProgressMeter -         LG23:1229202              5.7                619000         108351.6
+12:16:20.309 INFO  ProgressMeter -         LG23:1304527              5.9                691000         117525.7
+12:16:58.098 INFO  ProgressMeter -         LG23:1315792              6.5                702000         107844.3
+12:17:08.909 INFO  ProgressMeter -         LG23:1400001              6.7                784000         117197.4
+12:17:28.323 INFO  ProgressMeter -         LG23:1403003              7.0                787000         112218.0
+12:17:38.367 INFO  ProgressMeter -         LG23:1485330              7.2                866000         120603.9
+12:18:17.949 INFO  ProgressMeter -         LG23:1487333              7.8                868000         110711.0
+12:18:29.316 INFO  ProgressMeter -         LG23:1568513              8.0                942000         117314.7
+12:18:48.860 INFO  ProgressMeter -         LG23:1576656              8.4                950000         113698.7
+12:18:58.932 INFO  ProgressMeter -         LG23:1657116              8.5               1027000         120493.5
+12:19:38.679 INFO  ProgressMeter -         LG23:1671613              9.2               1041000         113327.9
+12:19:49.894 INFO  ProgressMeter -         LG23:1789287              9.4               1125000         120030.1
+12:20:06.134 INFO  ProgressMeter -         LG23:1803509              9.6               1139000         118112.9
+12:20:16.153 INFO  ProgressMeter -         LG23:1888550              9.8               1220000         124359.1
+12:20:53.723 INFO  ProgressMeter -         LG23:1892552             10.4               1224000         117281.8
+12:21:03.744 INFO  ProgressMeter -         LG23:1961964             10.6               1291000         121752.6
+12:21:23.884 INFO  ProgressMeter -         LG23:1982434             10.9               1310000         119753.4
+12:22:12.088 INFO  ProgressMeter -         LG23:2071175             11.7               1396000         118883.9
+12:22:22.164 INFO  ProgressMeter -         LG23:2144971             11.9               1469000         123336.7
+12:22:41.051 INFO  ProgressMeter -         LG23:2154978             12.2               1479000         120979.0
+12:22:51.104 INFO  ProgressMeter -         LG23:2229284             12.4               1552000         125233.8
+12:23:31.923 INFO  ProgressMeter -         LG23:2242165             13.1               1564000         119634.7
+12:23:41.976 INFO  ProgressMeter -         LG23:2308870             13.2               1629000         123029.9
+12:24:04.198 INFO  ProgressMeter -         LG23:2327458             13.6               1647000         121004.6
+12:24:14.202 INFO  ProgressMeter -         LG23:2411417             13.8               1725000         125201.6
+12:24:57.123 INFO  ProgressMeter -         LG23:2417423             14.5               1731000         119435.9
+12:25:44.663 INFO  ProgressMeter -         LG23:2510175             15.3               1817000         118871.1
+12:25:54.693 INFO  ProgressMeter -         LG23:2581556             15.5               1888000         122179.8
+12:26:37.233 INFO  ProgressMeter -         LG23:2590609             16.2               1897000         117376.8
+12:27:03.891 INFO  ProgressMeter -         LG23:2676638             16.6               1982000         119354.9
+12:27:15.078 INFO  ProgressMeter -         LG23:2758270             16.8               2061000         122734.2
+12:27:53.905 INFO  ProgressMeter -         LG23:2771301             17.4               2074000         118925.4
+12:28:20.318 INFO  ProgressMeter -         LG23:2864151             17.9               2163000         120975.2
+12:28:30.686 INFO  ProgressMeter -         LG23:2930293             18.1               2229000         123473.1
+12:29:08.521 INFO  ProgressMeter -         LG23:2945561             18.7               2244000         120108.5
+12:29:35.504 INFO  ProgressMeter -         LG23:3030330             19.1               2327000         121623.5
+12:29:45.884 INFO  ProgressMeter -         LG23:3095510             19.3               2390000         123796.9
+12:30:21.687 INFO  ProgressMeter -         LG23:3114554             19.9               2409000         121039.9
+12:30:48.949 INFO  ProgressMeter -         LG23:3202577             20.4               2495000         122562.9
+12:30:59.015 INFO  ProgressMeter -         LG23:3263269             20.5               2555000         124484.4
+12:31:41.631 INFO  ProgressMeter -         LG23:3285842             21.2               2577000         121356.6
+12:32:09.056 INFO  ProgressMeter -         LG23:3372073             21.7               2661000         122671.9
+12:32:19.117 INFO  ProgressMeter -         LG23:3440402             21.9               2729000         124841.6
+12:33:00.658 INFO  ProgressMeter -         LG23:3455504             22.6               2744000         121674.1
+12:33:10.672 INFO  ProgressMeter -         LG23:3534181             22.7               2820000         124125.5
+12:33:32.535 INFO  ProgressMeter -         LG23:3543277             23.1               2829000         122556.0
+12:33:42.589 INFO  ProgressMeter -         LG23:3628630             23.3               2911000         125199.5
+12:34:25.104 INFO  ProgressMeter -         LG23:3630633             24.0               2913000         121580.3
+12:34:35.658 INFO  ProgressMeter -         LG23:3712111             24.1               2993000         124008.8
+12:34:53.128 INFO  ProgressMeter -         LG23:3719194             24.4               3000000         122817.2
+12:35:03.154 INFO  ProgressMeter -         LG23:3803058             24.6               3083000         125357.6
+12:35:44.263 INFO  ProgressMeter -         LG23:3806071             25.3               3086000         122078.6
+12:35:54.309 INFO  ProgressMeter -         LG23:3884077             25.4               3163000         124301.3
+12:36:12.125 INFO  ProgressMeter -         LG23:3892281             25.7               3171000         123178.3
+12:36:55.672 INFO  ProgressMeter -         LG23:3984870             26.5               3260000         123163.2
+12:37:05.678 INFO  ProgressMeter -         LG23:4067201             26.6               3342000         125470.6
+12:37:21.645 INFO  ProgressMeter -         LG23:4071206             26.9               3346000         124378.1
+12:37:31.696 INFO  ProgressMeter -         LG23:4164913             27.1               3432000         126785.5
+12:38:05.833 INFO  ProgressMeter -         LG23:4165914             27.6               3433000         124211.7
+12:38:16.285 INFO  ProgressMeter -         LG23:4253650             27.8               3509000         126166.3
+12:38:34.979 INFO  ProgressMeter -         LG23:4271193             28.1               3526000         125373.0
+12:38:45.022 INFO  ProgressMeter -         LG23:4368746             28.3               3615000         127777.1
+12:39:19.177 INFO  ProgressMeter -         LG23:4370777             28.9               3617000         125326.1
+12:39:29.210 INFO  ProgressMeter -         LG23:4455484             29.0               3695000         127291.3
+12:39:46.613 INFO  ProgressMeter -         LG23:4464493             29.3               3704000         126338.9
+12:40:30.314 INFO  ProgressMeter -         LG23:4550996             30.0               3789000         126105.4
+12:40:40.318 INFO  ProgressMeter -         LG23:4632719             30.2               3865000         127924.9
+12:40:57.015 INFO  ProgressMeter -         LG23:4641867             30.5               3874000         127052.5
+12:41:42.136 INFO  ProgressMeter -         LG23:4728116             31.2               3959000         126715.0
+12:41:52.189 INFO  ProgressMeter -         LG23:4802801             31.4               4032000         128363.1
+12:42:09.586 INFO  ProgressMeter -         LG23:4814822             31.7               4044000         127567.6
+12:42:53.188 INFO  ProgressMeter -         LG23:4908421             32.4               4131000         127391.7
+12:43:17.995 INFO  ProgressMeter -         LG23:5000065             32.8               4221000         128528.4
+12:43:29.000 INFO  ProgressMeter -         LG23:5093447             33.0               4310000         130509.5
+12:44:03.851 INFO  ProgressMeter -         LG23:5094447             33.6               4311000         128283.5
+12:44:29.867 INFO  ProgressMeter -         LG23:5178133             34.0               4394000         129087.7
+12:44:40.516 INFO  ProgressMeter -         LG23:5260351             34.2               4476000         130814.7
+12:45:17.412 INFO  ProgressMeter -         LG23:5264354             34.8               4480000         128620.0
+12:45:42.784 INFO  ProgressMeter -         LG23:5350870             35.3               4565000         129488.3
+12:45:53.252 INFO  ProgressMeter -         LG23:5431241             35.4               4645000         131108.7
+12:46:27.849 INFO  ProgressMeter -         LG23:5436256             36.0               4650000         129147.9
+12:46:54.092 INFO  ProgressMeter -         LG23:5552784             36.4               4743000         130149.8
+12:47:05.119 INFO  ProgressMeter -         LG23:5639548             36.6               4821000         131626.4
+12:47:38.445 INFO  ProgressMeter -         LG23:5650646             37.2               4832000         129956.0
+12:48:02.652 INFO  ProgressMeter -         LG23:5738731             37.6               4919000         130875.7
+12:48:12.665 INFO  ProgressMeter -         LG23:5823298             37.8               5002000         132495.7
+12:48:44.758 INFO  ProgressMeter -         LG23:5839418             38.3               5006000         130749.2
+12:49:09.198 INFO  ProgressMeter -         LG23:5925775             38.7               5090000         131543.6
+12:49:19.233 INFO  ProgressMeter -         LG23:5994352             38.9               5156000         132675.8
+12:49:51.676 INFO  ProgressMeter -         LG23:6010931             39.4               5172000         131261.2
+12:50:01.713 INFO  ProgressMeter -         LG23:6097276             39.6               5255000         132803.9
+12:50:17.392 INFO  ProgressMeter -         LG23:6098276             39.8               5256000         131957.7
+12:50:27.463 INFO  ProgressMeter -         LG23:6166854             40.0               5324000         133104.0
+12:51:01.209 INFO  ProgressMeter -         LG23:6180063             40.6               5337000         131578.8
+12:51:25.092 INFO  ProgressMeter -         LG23:6266175             41.0               5422000         132375.4
+12:51:35.093 INFO  ProgressMeter -         LG23:6349495             41.1               5504000         133832.7
+12:52:09.232 INFO  ProgressMeter -         LG23:6354501             41.7               5509000         132126.3
+12:52:19.771 INFO  ProgressMeter -         LG23:6442381             41.9               5596000         133649.9
+12:52:33.223 INFO  ProgressMeter -         LG23:6443383             42.1               5597000         132961.8
+12:53:13.329 INFO  ProgressMeter -         LG23:6557765             42.8               5694000         133151.8
+12:53:24.015 INFO  ProgressMeter -         LG23:6656554             42.9               5780000         134602.2
+12:53:39.945 INFO  ProgressMeter -         LG23:6660557             43.2               5784000         133867.7
+12:54:21.814 INFO  ProgressMeter -         LG23:6747604             43.9               5869000         133676.0
+12:54:31.837 INFO  ProgressMeter -         LG23:6832099             44.1               5950000         135007.3
+12:54:47.588 INFO  ProgressMeter -         LG23:6837181             44.3               5955000         134320.7
+12:55:29.413 INFO  ProgressMeter -         LG23:6924434             45.0               6037000         134062.3
+12:55:39.429 INFO  ProgressMeter -         LG23:6996355             45.2               6108000         135138.0
+12:55:54.653 INFO  ProgressMeter -         LG23:7003433             45.5               6115000         134537.6
+12:56:37.428 INFO  ProgressMeter -         LG23:7095265             46.2               6200000         134301.2
+12:57:01.603 INFO  ProgressMeter -         LG23:7176998             46.6               6281000         134878.6
+12:57:40.671 INFO  ProgressMeter -         LG23:7261328             47.2               6364000         134776.4
+12:57:50.716 INFO  ProgressMeter -         LG23:7345008             47.4               6446000         136030.7
+12:58:05.299 INFO  ProgressMeter -         LG23:7347015             47.6               6448000         135378.6
+12:58:16.605 INFO  ProgressMeter -         LG23:7392582             47.8               6491000         135744.3
+12:59:03.047 INFO  ProgressMeter -         LG23:7477104             48.6               6551000         134816.8
+12:59:27.628 INFO  ProgressMeter -         LG23:7566653             49.0               6636000         135424.3
+12:59:37.672 INFO  ProgressMeter -         LG23:7649315             49.2               6718000         136630.9
+13:00:07.961 INFO  ProgressMeter -         LG23:7651324             49.7               6720000         135282.7
+13:00:29.946 INFO  ProgressMeter -         LG23:7739203             50.0               6806000         136010.7
+13:00:40.473 INFO  ProgressMeter -         LG23:7830081             50.2               6885000         137108.7
+13:01:13.998 INFO  ProgressMeter -         LG23:7837122             50.8               6892000         135737.7
+13:01:38.579 INFO  ProgressMeter -         LG23:7950599             51.2               6980000         136370.6
+13:01:48.580 INFO  ProgressMeter -         LG23:8030010             51.4               7059000         137466.3
+13:02:21.554 INFO  ProgressMeter -         LG23:8033043             51.9               7062000         136068.5
+13:02:44.333 INFO  ProgressMeter -         LG23:8114366             52.3               7143000         136629.8
+13:02:54.407 INFO  ProgressMeter -         LG23:8210257             52.4               7227000         137794.0
+13:03:27.308 INFO  ProgressMeter -         LG23:8214260             53.0               7231000         136443.7
+13:03:54.006 INFO  ProgressMeter -         LG23:8309059             53.4               7320000         136973.0
+13:04:04.012 INFO  ProgressMeter -         LG23:8383763             53.6               7392000         137890.0
+13:04:36.609 INFO  ProgressMeter -         LG23:8397023             54.2               7405000         136746.7
+13:05:02.529 INFO  ProgressMeter -         LG23:8482665             54.6               7489000         137203.3
+13:05:12.600 INFO  ProgressMeter -         LG23:8583448             54.8               7566000         138189.0
+13:05:50.193 INFO  ProgressMeter -         LG23:8601762             55.4               7584000         136950.6
+13:06:14.068 INFO  ProgressMeter -         LG23:8690036             55.8               7667000         137461.7
+13:06:24.089 INFO  ProgressMeter -         LG23:8768660             55.9               7745000         138445.6
+13:06:58.740 INFO  ProgressMeter -         LG23:8775664             56.5               7752000         137154.8
+13:07:09.533 INFO  ProgressMeter -         LG23:8862262             56.7               7834000         138165.9
+13:07:24.645 INFO  ProgressMeter -         LG23:8864264             57.0               7836000         137590.0
+13:08:05.784 INFO  ProgressMeter -         LG23:8950557             57.6               7922000         137445.3
+13:08:15.804 INFO  ProgressMeter -         LG23:9073834             57.8               8014000         138639.8
+13:08:32.921 INFO  ProgressMeter -         LG23:9082080             58.1               8022000         138096.6
+13:08:42.925 INFO  ProgressMeter -         LG23:9211994             58.3               8117000         139332.1
+13:09:16.589 INFO  ProgressMeter -         LG23:9217995             58.8               8123000         138105.0
+13:09:26.628 INFO  ProgressMeter -         LG23:9300270             59.0               8205000         139103.4
+13:09:43.159 INFO  ProgressMeter -         LG23:9303272             59.3               8208000         138507.3
+13:10:24.214 INFO  ProgressMeter -         LG23:9403028             59.9               8301000         138477.7
+13:10:49.038 INFO  ProgressMeter -         LG23:9492707             60.4               8386000         138936.8
+13:11:31.544 INFO  ProgressMeter -         LG23:9581496             61.1               8472000         138733.3
+13:11:41.571 INFO  ProgressMeter -         LG23:9678912             61.2               8550000         139628.5
+13:11:58.328 INFO  ProgressMeter -         LG23:9687918             61.5               8559000         139140.8
+13:12:43.442 INFO  ProgressMeter -         LG23:9786326             62.3               8649000         138906.0
+13:12:53.468 INFO  ProgressMeter -         LG23:9868799             62.4               8722000         139703.5
+13:13:11.100 INFO  ProgressMeter -         LG23:9889101             62.7               8740000         139336.0
+13:13:51.915 INFO  ProgressMeter -         LG23:9976835             63.4               8825000         139181.7
+13:14:01.982 INFO  ProgressMeter -        LG23:10065469             63.6               8903000         140041.3
+13:14:18.557 INFO  ProgressMeter -        LG23:10074520             63.9               8912000         139576.3
+13:14:30.152 INFO  ProgressMeter -        LG23:10157325             64.0               8994000         140435.5
+13:15:02.307 INFO  ProgressMeter -        LG23:10160496             64.6               8997000         139316.6
+13:15:26.309 INFO  ProgressMeter -        LG23:10286391             65.0               9095000         139967.1
+13:15:36.395 INFO  ProgressMeter -        LG23:10363543             65.1               9167000         140711.1
+13:16:05.534 INFO  ProgressMeter -        LG23:10370595             65.6               9174000         139776.6
+13:16:30.868 INFO  ProgressMeter -        LG23:10450822             66.1               9254000         140094.2
+13:16:40.876 INFO  ProgressMeter -        LG23:10529811             66.2               9331000         140904.1
+13:17:15.193 INFO  ProgressMeter -        LG23:10536885             66.8               9338000         139802.3
+13:17:25.200 INFO  ProgressMeter -        LG23:10617018             67.0               9417000         140633.9
+13:17:45.669 INFO  ProgressMeter -        LG23:10622058             67.3               9422000         139995.4
+13:17:56.202 INFO  ProgressMeter -        LG23:10687064             67.5               9486000         140579.6
+13:18:37.598 INFO  ProgressMeter -        LG23:10704234             68.2               9503000         139406.2
+13:19:07.634 INFO  ProgressMeter -        LG23:10790735             68.7               9585000         139584.0
+13:19:17.695 INFO  ProgressMeter -        LG23:10848150             68.8               9642000         140072.1
+13:20:01.526 INFO  ProgressMeter -        LG23:10872188             69.6               9666000         138946.2
+13:20:12.482 INFO  ProgressMeter -        LG23:10954131             69.7               9746000         139729.4
+13:20:33.577 INFO  ProgressMeter -        LG23:10956136             70.1               9748000         139057.1
+13:20:43.651 INFO  ProgressMeter -        LG23:11031404             70.3               9823000         139792.2
+13:21:16.522 INFO  ProgressMeter -        LG23:11034406             70.8               9826000         138753.1
+13:21:26.561 INFO  ProgressMeter -        LG23:11114863             71.0               9905000         139538.9
+13:21:43.203 INFO  ProgressMeter -        LG23:11121905             71.3               9912000         139094.1
+13:21:53.287 INFO  ProgressMeter -        LG23:11250069             71.4              10000000         139998.8
+13:22:29.287 INFO  ProgressMeter -        LG23:11274591             72.0              10017000         139068.6
+13:22:39.626 INFO  ProgressMeter -        LG23:11355548             72.2              10092000         139775.5
+13:22:55.847 INFO  ProgressMeter -        LG23:11370597             72.5              10107000         139461.0
+13:23:38.650 INFO  ProgressMeter -        LG23:11453054             73.2              10189000         139222.0
+13:24:02.414 INFO  ProgressMeter -        LG23:11541859             73.6              10273000         139614.2
+13:24:45.558 INFO  ProgressMeter -        LG23:11629214             74.3              10359000         139420.5
+13:24:55.702 INFO  ProgressMeter -        LG23:11715657             74.5              10434000         140111.1
+13:25:13.241 INFO  ProgressMeter -        LG23:11734690             74.8              10453000         139817.5
+13:25:55.494 INFO  ProgressMeter -        LG23:11826785             75.5              10538000         139639.1
+13:26:05.544 INFO  ProgressMeter -        LG23:11903596             75.6              10612000         140308.2
+13:26:23.254 INFO  ProgressMeter -        LG23:11914614             75.9              10623000         139907.7
+13:26:34.820 INFO  ProgressMeter -        LG23:12006533             76.1              10708000         140670.0
+13:27:07.815 INFO  ProgressMeter -        LG23:12009647             76.7              10711000         139700.2
+13:27:32.014 INFO  ProgressMeter -        LG23:12092057             77.1              10793000         140033.1
+13:27:42.084 INFO  ProgressMeter -        LG23:12174509             77.2              10875000         140790.4
+13:28:18.077 INFO  ProgressMeter -        LG23:12178510             77.8              10879000         139756.8
+13:28:44.011 INFO  ProgressMeter -        LG23:12267191             78.3              10965000         140083.8
+13:28:54.504 INFO  ProgressMeter -        LG23:12344041             78.4              11041000         140740.3
+13:29:29.282 INFO  ProgressMeter -        LG23:12356055             79.0              11053000         139859.8
+13:29:55.479 INFO  ProgressMeter -        LG23:12447866             79.5              11144000         140236.5
+13:30:05.502 INFO  ProgressMeter -        LG23:12525995             79.6              11216000         140846.5
+13:30:40.029 INFO  ProgressMeter -        LG23:12545047             80.2              11235000         140072.9
+13:31:04.137 INFO  ProgressMeter -        LG23:12637486             80.6              11326000         140503.6
+13:31:14.146 INFO  ProgressMeter -        LG23:12717551             80.8              11403000         141166.7
+13:32:04.045 INFO  ProgressMeter -        LG23:12733710             81.6              11419000         139924.2
+13:32:28.637 INFO  ProgressMeter -        LG23:12821798             82.0              11505000         140273.5
+13:32:38.670 INFO  ProgressMeter -        LG23:12894526             82.2              11577000         140864.1
+13:33:11.127 INFO  ProgressMeter -        LG23:12906530             82.7              11589000         140088.1
+13:33:21.414 INFO  ProgressMeter -        LG23:12982720             82.9              11664000         140703.1
+13:33:36.725 INFO  ProgressMeter -        LG23:12988729             83.2              11670000         140343.4
+13:34:18.206 INFO  ProgressMeter -        LG23:13077303             83.8              11756000         140211.9
+13:34:28.243 INFO  ProgressMeter -        LG23:13153877             84.0              11832000         140837.4
+13:34:44.532 INFO  ProgressMeter -        LG23:13158883             84.3              11837000         140443.0
+13:34:54.589 INFO  ProgressMeter -        LG23:13263015             84.5              11922000         141170.8
+13:35:29.642 INFO  ProgressMeter -        LG23:13287106             85.0              11937000         140377.3
+13:35:39.662 INFO  ProgressMeter -        LG23:13372524             85.2              12019000         141064.6
+13:35:55.422 INFO  ProgressMeter -        LG23:13374527             85.5              12021000         140654.5
+13:36:39.013 INFO  ProgressMeter -        LG23:13458199             86.2              12103000         140420.2
+13:36:49.053 INFO  ProgressMeter -        LG23:13530561             86.4              12171000         140935.5
+13:37:08.089 INFO  ProgressMeter -        LG23:13548084             86.7              12188000         140615.8
+13:37:18.095 INFO  ProgressMeter -        LG23:13648321             86.8              12273000         141324.5
+13:37:52.886 INFO  ProgressMeter -        LG23:13663842             87.4              12288000         140558.8
+13:38:02.894 INFO  ProgressMeter -        LG23:13738317             87.6              12358000         141090.3
+13:38:18.844 INFO  ProgressMeter -        LG23:13756382             87.9              12376000         140868.2
+13:38:28.874 INFO  ProgressMeter -        LG23:13896801             88.0              12471000         141680.0
+13:39:02.889 INFO  ProgressMeter -        LG23:13912811             88.6              12487000         140953.9
+13:39:25.520 INFO  ProgressMeter -        LG23:13996105             89.0              12570000         141289.3
+13:39:35.745 INFO  ProgressMeter -        LG23:14073024             89.1              12645000         141860.5
+13:40:07.227 INFO  ProgressMeter -        LG23:14082146             89.7              12654000         141130.8
+13:40:31.427 INFO  ProgressMeter -        LG23:14171831             90.1              12742000         141475.8
+13:40:41.474 INFO  ProgressMeter -        LG23:14254586             90.2              12823000         142110.9
+13:41:14.065 INFO  ProgressMeter -        LG23:14262827             90.8              12829000         141326.7
+13:41:38.568 INFO  ProgressMeter -        LG23:14347101             91.2              12913000         141614.9
+13:41:48.890 INFO  ProgressMeter -        LG23:14422313             91.4              12986000         142147.3
+13:42:23.842 INFO  ProgressMeter -        LG23:14437327             91.9              13001000         141409.8
+13:42:48.068 INFO  ProgressMeter -        LG23:14535336             92.3              13088000         141733.7
+13:42:58.070 INFO  ProgressMeter -        LG23:14686696             92.5              13178000         142451.2
+13:43:33.055 INFO  ProgressMeter -        LG23:14704072             93.1              13195000         141741.5
+13:43:55.218 INFO  ProgressMeter -        LG23:14808975             93.5              13287000         142165.7
+13:44:05.268 INFO  ProgressMeter -        LG23:14889827             93.6              13367000         142765.8
+13:44:41.919 INFO  ProgressMeter -        LG23:14907683             94.2              13375000         141925.3
+13:45:06.879 INFO  ProgressMeter -        LG23:15000449             94.7              13464000         142241.8
+13:45:16.928 INFO  ProgressMeter -        LG23:15079975             94.8              13536000         142749.9
+13:45:48.549 INFO  ProgressMeter -        LG23:15100572             95.4              13556000         142170.6
+13:46:11.483 INFO  ProgressMeter -        LG23:15192944             95.7              13643000         142511.7
+13:46:21.500 INFO  ProgressMeter -        LG23:15291090             95.9              13726000         143129.1
+13:46:49.818 INFO  ProgressMeter -        LG23:15313392             96.4              13742000         142594.2
+13:46:59.834 INFO  ProgressMeter -        LG23:15400690             96.5              13826000         143217.7
+13:47:13.740 INFO  ProgressMeter -        LG23:15404693             96.8              13830000         142916.1
+13:47:52.925 INFO  ProgressMeter -        LG23:15491140             97.4              13915000         142830.5
+13:48:16.762 INFO  ProgressMeter -        LG23:15576804             97.8              14000000         143119.4
+13:48:56.173 INFO  ProgressMeter -        LG23:15675305             98.5              14087000         143048.2
+13:49:19.754 INFO  ProgressMeter -        LG23:15759333             98.9              14170000         143319.1
+13:49:59.900 INFO  ProgressMeter -        LG23:15845800             99.5              14254000         143199.6
+13:50:23.830 INFO  ProgressMeter -        LG23:15939980             99.9              14343000         143518.6
+13:51:03.028 INFO  ProgressMeter -        LG23:16039385            100.6              14437000         143521.0
+13:51:13.052 INFO  ProgressMeter -        LG23:16130760            100.8              14524000         144146.5
+13:51:27.503 INFO  ProgressMeter -        LG23:16142661            101.0              14535000         143911.7
+13:51:56.728 INFO  ProgressMeter -        LG23:16234416            101.5              14624000         144097.9
+13:52:07.595 INFO  ProgressMeter -        LG23:16337398            101.7              14715000         144736.3
+13:53:17.099 INFO  ProgressMeter -             LG24:175            102.8              14742000         143368.3
+13:53:40.941 INFO  ProgressMeter -          LG24:135586            103.2              14850000         143862.7
+13:53:50.983 INFO  ProgressMeter -          LG24:283039            103.4              14953000         144626.0
+13:54:23.530 INFO  ProgressMeter -          LG24:292079            103.9              14961000         143948.2
+13:54:33.587 INFO  ProgressMeter -          LG24:424329            104.1              15056000         144629.0
+13:54:48.603 INFO  ProgressMeter -          LG24:437894            104.4              15069000         144406.7
+13:54:59.878 INFO  ProgressMeter -          LG24:558789            104.5              15164000         145055.8
+13:55:33.150 INFO  ProgressMeter -          LG24:578491            105.1              15180000         144442.7
+13:55:58.998 INFO  ProgressMeter -          LG24:659500            105.5              15260000         144611.1
+13:56:09.249 INFO  ProgressMeter -          LG24:750604            105.7              15338000         145115.3
+13:56:42.042 INFO  ProgressMeter -          LG24:774590            106.2              15360000         144575.9
+13:57:07.420 INFO  ProgressMeter -          LG24:862660            106.7              15445000         144799.5
+13:57:17.511 INFO  ProgressMeter -          LG24:938471            106.8              15520000         145273.6
+13:57:51.402 INFO  ProgressMeter -          LG24:947512            107.4              15529000         144593.3
+13:58:01.778 INFO  ProgressMeter -         LG24:1029533            107.6              15607000         145086.0
+13:58:17.258 INFO  ProgressMeter -         LG24:1033544            107.8              15611000         144775.9
+13:58:58.246 INFO  ProgressMeter -         LG24:1114965            108.5              15692000         144611.0
+13:59:08.354 INFO  ProgressMeter -         LG24:1186124            108.7              15761000         145021.7
+13:59:24.208 INFO  ProgressMeter -         LG24:1197157            108.9              15772000         144770.9
+14:00:05.028 INFO  ProgressMeter -         LG24:1279783            109.6              15854000         144620.5
+14:00:15.052 INFO  ProgressMeter -         LG24:1347021            109.8              15921000         145010.6
+14:00:32.122 INFO  ProgressMeter -         LG24:1376873            110.1              15943000         144835.7
+14:00:42.197 INFO  ProgressMeter -         LG24:1510175            110.2              16024000         145349.8
+14:01:22.792 INFO  ProgressMeter -         LG24:1612488            110.9              16098000         145130.4
+14:01:32.814 INFO  ProgressMeter -         LG24:1695163            111.1              16175000         145605.3
+14:01:49.516 INFO  ProgressMeter -         LG24:1703187            111.4              16183000         145313.2
+14:02:00.565 INFO  ProgressMeter -         LG24:1788569            111.6              16267000         145826.3
+14:02:35.369 INFO  ProgressMeter -         LG24:1789597            112.1              16268000         145080.9
+14:02:45.406 INFO  ProgressMeter -         LG24:1925633            112.3              16368000         145755.2
+14:03:00.695 INFO  ProgressMeter -         LG24:1926635            112.6              16369000         145434.1
+14:03:11.538 INFO  ProgressMeter -         LG24:2020265            112.7              16455000         145963.9
+14:03:47.107 INFO  ProgressMeter -         LG24:2026278            113.3              16461000         145253.3
+14:04:12.865 INFO  ProgressMeter -         LG24:2115373            113.8              16545000         145443.5
+14:04:23.070 INFO  ProgressMeter -         LG24:2189136            113.9              16614000         145832.0
+14:05:00.360 INFO  ProgressMeter -         LG24:2201198            114.5              16626000         145145.6
+14:05:10.435 INFO  ProgressMeter -         LG24:2325682            114.7              16722000         145770.0
+14:05:26.898 INFO  ProgressMeter -         LG24:2329216            115.0              16725000         145448.2
+14:05:38.222 INFO  ProgressMeter -         LG24:2405844            115.2              16790000         145774.2
+14:06:26.549 INFO  ProgressMeter -         LG24:2440412            116.0              16818000         145003.3
+14:06:36.614 INFO  ProgressMeter -         LG24:2568251            116.2              16903000         145525.7
+14:06:55.578 INFO  ProgressMeter -         LG24:2592893            116.5              16926000         145328.2
+14:07:05.655 INFO  ProgressMeter -         LG24:2651476            116.6              16981000         145590.5
+14:07:44.511 INFO  ProgressMeter -         LG24:2696406            117.3              17020000         145119.2
+14:07:54.843 INFO  ProgressMeter -         LG24:2777803            117.5              17096000         145553.5
+14:08:12.728 INFO  ProgressMeter -         LG24:2782806            117.8              17101000         145227.5
+14:08:59.588 INFO  ProgressMeter -         LG24:2866414            118.5              17183000         144962.4
+14:09:09.777 INFO  ProgressMeter -         LG24:2937097            118.7              17253000         145344.7
+14:09:28.528 INFO  ProgressMeter -         LG24:2948412            119.0              17264000         145055.5
+14:10:15.992 INFO  ProgressMeter -         LG24:3028948            119.8              17344000         144765.4
+14:10:26.130 INFO  ProgressMeter -         LG24:3100328            120.0              17414000         145145.0
+14:10:45.441 INFO  ProgressMeter -         LG24:3115359            120.3              17429000         144881.4
+14:10:55.472 INFO  ProgressMeter -         LG24:3194889            120.5              17508000         145336.1
+14:11:32.484 INFO  ProgressMeter -         LG24:3195889            121.1              17509000         144603.9
+14:11:42.514 INFO  ProgressMeter -         LG24:3264508            121.2              17577000         144965.4
+14:11:58.808 INFO  ProgressMeter -         LG24:3275514            121.5              17588000         144731.9
+14:12:22.634 INFO  ProgressMeter -         LG24:3358160            121.9              17669000         144924.9
+GENOMICSDB_TIMER,GenomicsDB iterator next() timer,Wall-clock time(s),6350.252703404778,Cpu time(s),1137.4131164459013
+14:12:28.717 INFO  ProgressMeter -         LG24:3429719            122.0              17735154         145346.6
+14:12:28.717 INFO  ProgressMeter - Traversal complete. Processed 17735154 total variants in 122.0 minutes.
+14:12:28.746 INFO  GenotypeGVCFs - Shutting down engine
+[January 21, 2022 2:12:28 PM PST] org.broadinstitute.hellbender.tools.walkers.GenotypeGVCFs done. Elapsed time: 122.04 minutes.
+Runtime.totalMemory()=1652555776

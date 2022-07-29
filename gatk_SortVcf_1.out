@@ -1,0 +1,55 @@
+==========================================
+SLURM_JOB_ID = 7264055
+SLURM_JOB_NODELIST = a01-03
+TMPDIR = /tmp/SLURM_7264055
+==========================================
+Using GATK jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar SortVcf -I 0000-scattered.interval_list.vcf.gz -O 0000-scattered.interval_list.sorted.vcf.gz
+18:19:48.182 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home1/mharden/.conda/envs/gatk4/share/gatk4-4.2.2.0-1/gatk-package-4.2.2.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Mon Jan 31 18:19:48 PST 2022] SortVcf --INPUT 0000-scattered.interval_list.vcf.gz --OUTPUT 0000-scattered.interval_list.sorted.vcf.gz --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX true --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jan 31, 2022 6:19:48 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Mon Jan 31 18:19:48 PST 2022] Executing as mharden@a01-03.hpc.usc.edu on Linux 3.10.0-1062.4.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 1.8.0_302-b08; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.2.2.0
+INFO	2022-01-31 18:19:48	SortVcf	Reading entries from input file 1
+INFO	2022-01-31 18:19:48	SortVcf	read        25,000 records.  Elapsed time: 00:00:00s.  Time for last 25,000:    0s.  Last read position: LG00:1,371,851
+INFO	2022-01-31 18:19:48	SortVcf	read        50,000 records.  Elapsed time: 00:00:00s.  Time for last 25,000:    0s.  Last read position: LG00:2,094,133
+INFO	2022-01-31 18:19:49	SortVcf	read        75,000 records.  Elapsed time: 00:00:00s.  Time for last 25,000:    0s.  Last read position: LG00:3,672,905
+INFO	2022-01-31 18:19:49	SortVcf	read       100,000 records.  Elapsed time: 00:00:01s.  Time for last 25,000:    0s.  Last read position: LG00:5,030,028
+INFO	2022-01-31 18:19:49	SortVcf	read       125,000 records.  Elapsed time: 00:00:01s.  Time for last 25,000:    0s.  Last read position: LG00:5,475,313
+INFO	2022-01-31 18:19:49	SortVcf	read       150,000 records.  Elapsed time: 00:00:01s.  Time for last 25,000:    0s.  Last read position: LG00:7,332,656
+INFO	2022-01-31 18:19:50	SortVcf	read       175,000 records.  Elapsed time: 00:00:01s.  Time for last 25,000:    0s.  Last read position: LG00:8,034,353
+INFO	2022-01-31 18:19:50	SortVcf	read       200,000 records.  Elapsed time: 00:00:02s.  Time for last 25,000:    0s.  Last read position: LG00:9,560,051
+INFO	2022-01-31 18:19:50	SortVcf	read       225,000 records.  Elapsed time: 00:00:02s.  Time for last 25,000:    0s.  Last read position: LG00:10,688,949
+INFO	2022-01-31 18:19:50	SortVcf	read       250,000 records.  Elapsed time: 00:00:02s.  Time for last 25,000:    0s.  Last read position: LG00:12,353,592
+INFO	2022-01-31 18:19:51	SortVcf	read       275,000 records.  Elapsed time: 00:00:02s.  Time for last 25,000:    0s.  Last read position: LG00:13,637,130
+INFO	2022-01-31 18:19:51	SortVcf	read       300,000 records.  Elapsed time: 00:00:02s.  Time for last 25,000:    0s.  Last read position: LG00:14,169,865
+INFO	2022-01-31 18:19:51	SortVcf	read       325,000 records.  Elapsed time: 00:00:03s.  Time for last 25,000:    0s.  Last read position: LG00:15,112,354
+INFO	2022-01-31 18:19:52	SortVcf	read       350,000 records.  Elapsed time: 00:00:04s.  Time for last 25,000:    1s.  Last read position: LG00:15,637,547
+INFO	2022-01-31 18:19:52	SortVcf	read       375,000 records.  Elapsed time: 00:00:04s.  Time for last 25,000:    0s.  Last read position: LG00:16,448,134
+INFO	2022-01-31 18:19:53	SortVcf	read       400,000 records.  Elapsed time: 00:00:04s.  Time for last 25,000:    0s.  Last read position: LG00:16,989,034
+INFO	2022-01-31 18:19:53	SortVcf	read       425,000 records.  Elapsed time: 00:00:04s.  Time for last 25,000:    0s.  Last read position: LG00:17,655,960
+INFO	2022-01-31 18:19:53	SortVcf	read       450,000 records.  Elapsed time: 00:00:05s.  Time for last 25,000:    0s.  Last read position: LG00:18,934,603
+18:19:53.598 WARN  IntelInflater - Zero Bytes Written : 0
+INFO	2022-01-31 18:20:02	SortVcf	wrote        25,000 records.  Elapsed time: 00:00:09s.  Time for last 25,000:    0s.  Last read position: LG00:1,371,851
+INFO	2022-01-31 18:20:02	SortVcf	wrote        50,000 records.  Elapsed time: 00:00:09s.  Time for last 25,000:    0s.  Last read position: LG00:2,094,133
+INFO	2022-01-31 18:20:03	SortVcf	wrote        75,000 records.  Elapsed time: 00:00:09s.  Time for last 25,000:    0s.  Last read position: LG00:3,672,905
+INFO	2022-01-31 18:20:03	SortVcf	wrote       100,000 records.  Elapsed time: 00:00:09s.  Time for last 25,000:    0s.  Last read position: LG00:5,030,028
+INFO	2022-01-31 18:20:03	SortVcf	wrote       125,000 records.  Elapsed time: 00:00:09s.  Time for last 25,000:    0s.  Last read position: LG00:5,475,313
+INFO	2022-01-31 18:20:03	SortVcf	wrote       150,000 records.  Elapsed time: 00:00:10s.  Time for last 25,000:    0s.  Last read position: LG00:7,332,656
+INFO	2022-01-31 18:20:03	SortVcf	wrote       175,000 records.  Elapsed time: 00:00:10s.  Time for last 25,000:    0s.  Last read position: LG00:8,034,353
+INFO	2022-01-31 18:20:04	SortVcf	wrote       200,000 records.  Elapsed time: 00:00:10s.  Time for last 25,000:    0s.  Last read position: LG00:9,560,051
+INFO	2022-01-31 18:20:04	SortVcf	wrote       225,000 records.  Elapsed time: 00:00:10s.  Time for last 25,000:    0s.  Last read position: LG00:10,688,949
+INFO	2022-01-31 18:20:04	SortVcf	wrote       250,000 records.  Elapsed time: 00:00:10s.  Time for last 25,000:    0s.  Last read position: LG00:12,353,592
+INFO	2022-01-31 18:20:04	SortVcf	wrote       275,000 records.  Elapsed time: 00:00:11s.  Time for last 25,000:    0s.  Last read position: LG00:13,637,130
+INFO	2022-01-31 18:20:04	SortVcf	wrote       300,000 records.  Elapsed time: 00:00:11s.  Time for last 25,000:    0s.  Last read position: LG00:14,169,865
+INFO	2022-01-31 18:20:05	SortVcf	wrote       325,000 records.  Elapsed time: 00:00:11s.  Time for last 25,000:    0s.  Last read position: LG00:15,112,354
+INFO	2022-01-31 18:20:05	SortVcf	wrote       350,000 records.  Elapsed time: 00:00:11s.  Time for last 25,000:    0s.  Last read position: LG00:15,637,547
+INFO	2022-01-31 18:20:30	SortVcf	wrote       375,000 records.  Elapsed time: 00:00:36s.  Time for last 25,000:   24s.  Last read position: LG00:16,448,134
+INFO	2022-01-31 18:20:30	SortVcf	wrote       400,000 records.  Elapsed time: 00:00:36s.  Time for last 25,000:    0s.  Last read position: LG00:16,989,034
+INFO	2022-01-31 18:20:30	SortVcf	wrote       425,000 records.  Elapsed time: 00:00:36s.  Time for last 25,000:    0s.  Last read position: LG00:17,655,960
+INFO	2022-01-31 18:20:30	SortVcf	wrote       450,000 records.  Elapsed time: 00:00:36s.  Time for last 25,000:    0s.  Last read position: LG00:18,934,603
+[Mon Jan 31 18:20:37 PST 2022] picard.vcf.SortVcf done. Elapsed time: 0.83 minutes.
+Runtime.totalMemory()=7560757248
+Tool returned:
+0
