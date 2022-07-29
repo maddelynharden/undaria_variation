@@ -1,0 +1,14 @@
+# Ignore large memory files
+*.gz
+*.fasta
+*.fa
+*.fastq
+*.fq
+*.bt2
+*.sam
+*.bam
+*.bai
+*.sbi
+*.vcf
+*.tbi
+*.idx
